@@ -2,7 +2,7 @@ package com.example.zamatoapiretrofit.Json;
 
 public class CollectionData {
     private int collection_id;
-    private String res_count;
+    private int res_count;
     private String image_url;
     private String url;
     private String title;
@@ -17,11 +17,11 @@ public class CollectionData {
         this.collection_id = collection_id;
     }
 
-    public String getRes_count() {
+    public int getRes_count() {
         return res_count;
     }
 
-    public void setRes_count(String res_count) {
+    public void setRes_count(int res_count) {
         this.res_count = res_count;
     }
 

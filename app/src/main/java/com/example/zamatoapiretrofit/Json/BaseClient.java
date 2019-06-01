@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class BaseClient {
 
     private static final String BaseUrl = "https://developers.zomato.com/api/v2.1/";
-    private static Retrofit retrofitEndPoint;
+    private static Retrofit retrofitEndPoint = null;
 
     public static Retrofit getBaseClient() {
 

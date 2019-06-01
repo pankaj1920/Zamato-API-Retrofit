@@ -36,7 +36,7 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.co
         CollectionData collection = detail.get(i).getCollectionData();
         collection_vh.titles.setText(collection.getTitle());
         collection_vh.description.setText(collection.getDescription());
-        collection_vh.rest_count.setText(collection.getRes_count());
+        collection_vh.rest_count.setText(String.valueOf(collection.getRes_count()));
 
         Picasso.with(collection_vh.titles.getContext()).load(detail.get(i).getCollectionData().getImage_url()).into(collection_vh.image_view);
 
